@@ -7,6 +7,6 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
   app.use('/public', express.static(join(__dirname, '..', 'CategoryImages')));
   app.use('/public', express.static(join(__dirname, '..', 'ProductImages')));
-  await app.listen(5000);
+  await app.listen(3000);
 }
 bootstrap();
